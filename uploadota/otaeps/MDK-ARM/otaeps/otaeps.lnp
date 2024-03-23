@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"otaeps\startup_stm32f103xb.o"
+"otaeps\main.o"
+"otaeps\stm32f1xx_it.o"
+"otaeps\stm32f1xx_hal_msp.o"
+"otaeps\stm32f1xx_hal_gpio_ex.o"
+"otaeps\stm32f1xx_hal_tim.o"
+"otaeps\stm32f1xx_hal_tim_ex.o"
+"otaeps\stm32f1xx_hal_uart.o"
+"otaeps\stm32f1xx_hal.o"
+"otaeps\stm32f1xx_hal_rcc.o"
+"otaeps\stm32f1xx_hal_rcc_ex.o"
+"otaeps\stm32f1xx_hal_gpio.o"
+"otaeps\stm32f1xx_hal_dma.o"
+"otaeps\stm32f1xx_hal_cortex.o"
+"otaeps\stm32f1xx_hal_pwr.o"
+"otaeps\stm32f1xx_hal_flash.o"
+"otaeps\stm32f1xx_hal_flash_ex.o"
+"otaeps\stm32f1xx_hal_exti.o"
+"otaeps\system_stm32f1xx.o"
+"otaeps\min.o"
+--strict --scatter "otaeps\otaeps.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "otaeps.map" -o otaeps\otaeps.axf
